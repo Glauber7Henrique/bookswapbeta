@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar primary>
+    <ion-title>bookswap/LeitorBarcode</ion-title>
+    <button menuToggle><ion-icon name="menu"></ion-icon></button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button block (click)="scan()">Scanner</button>
+  <!--  {{ barcodeData | json }}</p> -->
+  <!-- <p>{{ barcodeData }}</p>  -->
+
+
+    <!--<center><img src={{capaLivro}}> </center> usar link direto! nao deixar img -->
+
+
+  <p>Titulo: {{ isbn_titulo | json }}</p>
+  <p>Autor: {{ isbn_autor | json }}</p>
+  <p>Descrição: {{ isbn_sinopse | json }}</p>
+
+</ion-content>

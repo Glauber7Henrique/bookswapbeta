@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-navbar primary>
+    <ion-title>bookswap/Cadastro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <center><h2>Informações do Livro</h2></center>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Titulo</ion-label>
+      <ion-input type="text" autocorrect="on" [(ngModel)]= "TxtTitulo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Autor</ion-label>
+      <ion-input type="text" [(ngModel)]= "TxtAutor"></ion-input>
+    </ion-item>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Gênero</ion-label>
+        <ion-select [(ngModel)]="TxtGenero">
+          <ion-option value="ação">Ação</ion-option>
+          <ion-option value="aventura">Aventura</ion-option>
+          <ion-option value="fantasia">Fantasia</ion-option>
+          <ion-option value="ficção">Ficção</ion-option>
+          <ion-option value="Romance">Romance</ion-option>
+          <ion-option value="Suspense">Suspense</ion-option>
+          <ion-option value="Infantil">Infantil</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+
+
+    <button (click)="salvaLivro()">Cadastrar</button>
+    <button ion-button icon-only (click)="scan()">
+      <ion-icon name="barcode"></ion-icon>
+    </button>
+
+</ion-content>
