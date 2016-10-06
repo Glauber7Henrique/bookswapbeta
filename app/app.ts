@@ -22,7 +22,7 @@ export class MyApp {
   acervo: any = AcervoPage;
   login: any = LoginPage;
   scanner: any = BarcodescannerPage;
-  rootPage: any = this.login;
+  rootPage: any = HomePage;//this.login;
 
 
   //rootPage: any = HomePage;
